@@ -1,0 +1,5 @@
+name: Test
+version: 0.1
+author: MarTCM
+main: com.martcm.test.Test
+api-version: 1.16
