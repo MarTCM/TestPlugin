@@ -1,5 +1,6 @@
 package com.martcm.test.events;
 
+import com.martcm.test.items.ItemManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -15,8 +16,9 @@ public class TestEvents implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event){
         Player player = event.getPlayer();
         player.sendMessage(ChatColor.LIGHT_PURPLE + "Welcome to the server "+ player.getDisplayName() +"! :D");
+        player.getInventory().addItem(ItemManager.Survival);
     }
 
-    
+
 
 }
